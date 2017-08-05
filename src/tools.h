@@ -27,7 +27,12 @@ public:
   /**
   * A helper method to calculate Jacobians.
   */
-  MatrixXd CalculateJacobian(const VectorXd& x_state);
+  MatrixXd CalculateJacobian(const VectorXd &x_state);
+
+  /**
+  * A helper method to calculate Cartesian coordinates from Polar ones
+  */
+  void CalculateCartesian(const float &rho, const float &phi, float &px, float &py);
 
 };
 
